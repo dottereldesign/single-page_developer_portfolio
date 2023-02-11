@@ -220,3 +220,38 @@ main p {
 .experience_skills-container:not(:last-child) {
   margin-bottom: 32px;
 }
+
+/* projects */
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px 0 16px;
+}
+
+footer a {
+  display: inline-block;
+  color: var(--clr-primary-500);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semi-bold);
+}
+
+.footer_icon-container ul {
+  display: flex;
+  color: var(--clr-primary-500);
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  padding: 0 12px 0 12px;
+}
+
+footer ul li i {
+  font-size: 20px;
+}
