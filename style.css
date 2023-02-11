@@ -1,4 +1,18 @@
 :root {
+  --clr-primary-100: hsl(0, 0%, 8%);
+  --clr-primary-200: hsl(153, 71%, 59%);
+  --clr-primary-300: hsl(0, 0%, 14%);
+  --clr-primary-400: hsl(0, 0%, 85%);
+  --clr-primary-500: hsl(0, 0%, 100%);
+
+  --ff-primary-100: "Space Grotesk", sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
   --fs-300: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
   --fs-400: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
   --fs-500: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
@@ -74,4 +88,82 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+* {
+  font-size: initial;
+  font-family: var(--ff-primary-100);
+}
+
+body {
+  background-color: var(--clr-primary-100);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 16px 0 16px;
+}
+
+header a {
+  display: inline-block;
+  color: var(--clr-primary-500);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semi-bold);
+}
+
+.header_icon-container ul {
+  display: flex;
+  color: var(--clr-primary-500);
+}
+
+header ul {
+  padding: 0;
+}
+
+header li {
+  list-style: none;
+  padding: 0 12px 0 12px;
+}
+
+header ul li i {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+main img {
+  position: absolute;
+  top: -15px;
+  width: 174px;
+  height: 383px;
+}
+
+main h1 {
+  color: var(--clr-primary-500);
+  font-size: var(--fs-800);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  margin-top: 285px;
+  line-height: 1.2;
 }
