@@ -268,6 +268,10 @@ main p {
   align-items: center;
 }
 
+.projects_card {
+  margin-bottom: 24px;
+}
+
 .projects_card a {
   color: var(--clr-primary-500);
   font-size: var(--fs-500);
@@ -279,6 +283,22 @@ main p {
 
 .projects_card a:last-of-type {
   margin-left: 16px;
+}
+
+.projects_card-languages {
+  color: var(--clr-primary-500);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+  margin: 8px 0 20px 0;
+}
+
+.projects_card-languages span {
+  color: var(--clr-primary-500);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+  padding: 0 16px 0 16px;
 }
 
 /* footer */
