@@ -233,6 +233,26 @@ main p {
 /* projects */
 .projects {
   padding: 0 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 652px;
+  margin: 0 auto;
+}
+
+@media (min-width: 652px) {
+  .projects {
+    padding: 0 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  .projects_card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
 }
 
 .projects h2 {
@@ -288,7 +308,7 @@ main p {
 .projects_card-languages {
   color: var(--clr-primary-500);
   font-size: var(--fs-500);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
   text-transform: uppercase;
   margin: 8px 0 20px 0;
 }
@@ -296,7 +316,7 @@ main p {
 .projects_card-languages span {
   color: var(--clr-primary-500);
   font-size: var(--fs-500);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
   text-transform: uppercase;
   padding: 0 16px 0 16px;
 }
