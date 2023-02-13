@@ -136,7 +136,7 @@ header ul li i {
   font-size: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 646px) {
   header {
     display: flex;
     flex-direction: row;
@@ -153,7 +153,7 @@ main {
   padding: 0 16px 0 16px;
 }
 
-main img {
+main picture {
   position: absolute;
   top: -15px;
   width: 174px;
@@ -193,6 +193,86 @@ main p {
   text-transform: uppercase;
   border-bottom: 3px solid var(--clr-primary-200);
   letter-spacing: 2px;
+}
+
+@media (min-width: 646px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 16px 0 16px;
+    margin: 45px 0 240px 0;
+  }
+
+  main h1 span {
+    color: var(--clr-primary-500);
+    font-size: var(--fs-900);
+    font-weight: var(--fw-semi-bold);
+    border-bottom: 3px solid var(--clr-primary-200);
+  }
+
+  main picture {
+    position: absolute;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 322px;
+    height: auto;
+    top: 0;
+    right: 0;
+  }
+
+  .main_content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    margin: auto;
+  }
+
+  main h1 {
+    color: var(--clr-primary-500);
+    font-size: var(--fs-900);
+    font-weight: var(--fw-semi-bold);
+    text-align: left;
+    margin-top: 0;
+    line-height: 1.2;
+  }
+
+  main p {
+    color: var(--clr-primary-500);
+    font-size: var(--fs-600);
+    font-weight: var(--fw-light);
+    text-align: left;
+    margin-top: 50px;
+  }
+
+  .main_cta {
+    display: inline-block;
+    color: var(--clr-primary-500);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-medium);
+    margin-top: 50px;
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--clr-primary-200);
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 1110px) {
+  main {
+    max-width: 1110px;
+    margin: 45px auto 250px auto;
+  }
+  main picture {
+    position: initial;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 445px;
+    height: auto;
+    top: 0;
+    right: 0;
+  }
 }
 
 /* section.experience */
