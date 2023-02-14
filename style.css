@@ -60,6 +60,7 @@ body {
 }
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 /* Make images easier to work with */
@@ -83,7 +84,9 @@ select {
   *,
   *::before,
   *::after {
+    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -164,8 +167,8 @@ main {
 main picture {
   position: absolute;
   top: -15px;
-  width: 174px;
-  height: 383px;
+  width: 204px;
+  height: auto;
   z-index: -10;
 }
 
@@ -193,6 +196,10 @@ main p {
   margin-top: 20px;
 }
 
+.main_content {
+  text-align: center;
+}
+
 .main_cta {
   color: var(--clr-primary-500);
   font-size: var(--fs-500);
@@ -201,6 +208,8 @@ main p {
   text-transform: uppercase;
   border-bottom: 3px solid var(--clr-primary-200);
   letter-spacing: 2px;
+  text-align: center;
+  display: inline-block;
 }
 
 .main_cta:hover {
@@ -216,6 +225,10 @@ main p {
     overflow: hidden;
     padding: 0 16px 0 16px;
     margin: 45px 0 240px 0;
+  }
+
+  .main_content {
+    text-align: initial;
   }
 
   main h1 span {
@@ -483,6 +496,10 @@ main p {
   border-bottom: 3px solid var(--clr-primary-200);
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.projects_CTA:hover {
+  color: var(--clr-primary-200);
 }
 
 .projects_heading {
